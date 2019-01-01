@@ -7,4 +7,3 @@ while GetKeyState("LButton", "P"){
 }
 
 //Left mouse click to fire & crouch automatically in CSGO
-//This program has the side effect of Ctrl+Clicking regardless of what program you run it in
