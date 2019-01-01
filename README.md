@@ -1,5 +1,6 @@
 # CSGOAutoCrouchShoot
 AutoHotKey script that allows CSGO players to automatically crouch when shooting a gun for better accuracy.
+Please DO NOT abuse this script in CSGO. You might / might not be banned
 
 **LICENSE**<br/>
 See LICENSE.txt for more details.
