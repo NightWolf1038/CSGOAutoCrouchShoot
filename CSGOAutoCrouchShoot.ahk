@@ -1,9 +1,27 @@
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
-//enables more accurate shooting
+#SingleInstance force ;Only one instance of the script will be running
+SetTitleMatchMode, 2
+;enables more accurate shooting
 
 LButton::
-while GetKeyState("LButton", "P"){
-	Send, {Control Down}{Click}{Control Up}
+Send, {Control Down}
+Loop
+{
+	GetKeyState, ClickState, LButton, P
+	If ClickState = U
+	{
+		Send, {Control Up}
+		Sleep 2
+		break
+	}
+	Send {Blind}{LButton}
 }
+Return
 
-//Left mouse click to fire & crouch automatically in CSGO
+
+
+*End::
+SoundBeep
+ExitApp
+
+;Left mouse click to fire & crouch automatically in CSGO
