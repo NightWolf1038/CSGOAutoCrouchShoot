@@ -14,7 +14,7 @@ Loop
 		Sleep 2
 		break
 	}
-	Send {Blind}{LButton}
+	Send {LButton}
 }
 Return
 
